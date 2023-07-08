@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,17 +15,11 @@ namespace Odevler
 
         static void CarpimTablosu(int a, int b)
         {
-            if (a < 1 || b > 10)
-            {
-                Console.WriteLine("Tablo 1 ile 10 Arasında Olmalıdır.");
-                return;
-            }
-
             for (int i = a; i <= b; i++)
             {
                 for (int j = a; j <= b; j++)
                 {
-                    Console.Write($"{i} x {j} = {i * j}\t");
+                    Console.WriteLine($"{i} x {j} = {i * j}");
 
                 }
                 Console.WriteLine();
